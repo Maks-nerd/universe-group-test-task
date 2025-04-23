@@ -1,0 +1,45 @@
+{
+  "name": "text-to-pdf-converter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "bun run check && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "bun biome lint --write ./src",
+    "format": "bun biome format --write ./src",
+    "check": "bun biome check ./src",
+    "fix": "bun biome check --write ./src",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "axios": "^1.7.7",
+    "pdfjs-dist": "2.16.105",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "add": "^2.0.6",
+    "autoprefixer": "^10.4.21",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "vite": "^6.3.2",
+    "vite-tsconfig-paths": "^5.0.1"
+  }
+}
