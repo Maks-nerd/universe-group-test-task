@@ -14,7 +14,7 @@ export default function PdfViewer({pdfUrl}: {pdfUrl: string}) {
 	return (
 		<div className="bg-card p-6 rounded-lg shadow-md mt-4">
 			<h3 className="text-xl font-semibold text-primary mb-4">View PDF</h3>
-			<div className=" h-[80vh]">
+			<div className="h-[59vh]">
 				{isLoading && (
 					<div className="flex justify-center items-center h-full">
 						<div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"></div>
